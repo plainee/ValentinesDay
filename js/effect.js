@@ -2,7 +2,12 @@
 $('document').ready(function(){
 	$('#play').click(function(){
 		var music=document.getElementById("music");
-        	music.play();
+		if (music.paused) {
+			music.play();
+        	}
+        	else {
+            		music.pause();
+        	}
 	});
 });
 
