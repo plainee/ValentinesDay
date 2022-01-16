@@ -67,11 +67,11 @@ body {
 #code {
     float: left;
     width: 440px;
-    margin-top: 60px !important;
+    margin-top: 0px !important;
     height: 400px;
     color: #333;
     font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
-    font-size: 12px
+    font-size: 14px
 }
 
 #code .string {
