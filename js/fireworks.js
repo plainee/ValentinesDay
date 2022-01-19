@@ -21,7 +21,7 @@ function clickEffect() {
     window.addEventListener('resize', updateSize, false);
     loop();
     window.addEventListener("mousedown", function(e) {
-      pushBalls(randBetween(10, 20), e.clientX, e.clientY);
+      pushBalls(randBetween(15, 20), e.clientX, e.clientY);
       document.body.classList.add("is-pressed");
       longPress = setTimeout(function(){
         document.body.classList.add("is-longpress");
@@ -73,7 +73,7 @@ function clickEffect() {
       if (longPressed == true) {
         this.multiplier = randBetween(14 + multiplier, 15 + multiplier);
       } else {
-        this.multiplier = randBetween(10, 15);
+        this.multiplier = randBetween(8, 12);
       }
       this.vx = (this.multiplier + Math.random() * 0.5) * Math.cos(this.angle);
       this.vy = (this.multiplier + Math.random() * 0.5) * Math.sin(this.angle);
