@@ -77,7 +77,7 @@ function clickEffect() {
       }
       this.vx = (this.multiplier + Math.random() * 0.5) * Math.cos(this.angle);
       this.vy = (this.multiplier + Math.random() * 0.5) * Math.sin(this.angle);
-      this.r = randBetween(3, 6) + 3 * Math.random();
+      this.r = randBetween(6, 10) + 3 * Math.random();
       this.color = colours[Math.floor(Math.random() * colours.length)];
     }
     update() {
