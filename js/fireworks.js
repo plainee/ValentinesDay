@@ -73,11 +73,11 @@ function clickEffect() {
       if (longPressed == true) {
         this.multiplier = randBetween(14 + multiplier, 15 + multiplier);
       } else {
-        this.multiplier = randBetween(10, 20);
+        this.multiplier = randBetween(10, 15);
       }
       this.vx = (this.multiplier + Math.random() * 0.5) * Math.cos(this.angle);
       this.vy = (this.multiplier + Math.random() * 0.5) * Math.sin(this.angle);
-      this.r = randBetween(8, 12) + 3 * Math.random();
+      this.r = randBetween(3, 6) + 3 * Math.random();
       this.color = colours[Math.floor(Math.random() * colours.length)];
     }
     update() {
