@@ -73,7 +73,7 @@ function clickEffect() {
       if (longPressed == true) {
         this.multiplier = randBetween(14 + multiplier, 15 + multiplier);
       } else {
-        this.multiplier = randBetween(6, 12);
+        this.multiplier = randBetween(10, 20);
       }
       this.vx = (this.multiplier + Math.random() * 0.5) * Math.cos(this.angle);
       this.vy = (this.multiplier + Math.random() * 0.5) * Math.sin(this.angle);
